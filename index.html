@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Student Enrollment Form</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="http://login2explore.com/jpdb/resources/js/0.0.4/jpdb-commons.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2 style="text-align: center;">Student Enrollment Form</h2>
+        <form id="studForm" method="post">
+            <div class="form-group">
+                <label for="rollNo">Roll No:</label>
+                <input type="text" class="form-control" name="rollNo" id="rollNo" placeholder="Enter Roll No." onchange="getStud()">
+            </div>
+            <div class="form-group">
+                <label for="studName">Full Name:</label>
+                <input type="text" class="form-control" id="studName" placeholder="Enter Full Name" name="studName">
+            </div>
+            <div class="form-group">
+                <label for="studClass">Class:</label>
+                <input type="text" class="form-control" id="studClass" placeholder="Enter Class" name="studClass">
+            </div>
+            <div class="form-group">
+                <label for="birthDate">Birth Date:</label>
+                <input type="date" class="form-control" id="birthDate" placeholder="Enter Birth Date" name="birthDate">
+            </div>
+            <div class="form-group">
+                <label for="address">Address:</label>
+                <input type="text" class="form-control" id="address" placeholder="Enter Address" name="address">
+            </div>
+            <div class="form-group">
+                <label for="enrollmentDate">Enrollment Date:</label>
+                <input type="date" class="form-control" id="enrollmentDate" placeholder="Enter Enrollment Date" name="enrollmentDate">
+            </div>
+            <div class="form-group text-center">
+                <button type="button" class="btn btn-lg btn-primary" id="save" onclick="saveStud()" disabled>Save</button>
+                <button type="button" class="btn btn-lg btn-primary" id="update" onclick="updateStud()" disabled>Update</button>
+                <button type="button" class="btn btn-lg btn-primary" id="reset" onclick="resetStud()" disabled>Reset</button>
+            </div>
+        </form>
+    </div>
+    <script src="http://login2explore.com/jpdb/resources/js/0.0.4/jpdb-commons.js"></script>
+    <script src="script2.js"></script>
+</body>
+</html>
